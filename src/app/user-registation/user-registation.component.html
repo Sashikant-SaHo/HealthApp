@@ -1,0 +1,104 @@
+<form >
+    <div class="container">
+        <form class="form-horizontal register-form" role="form">
+      
+      
+            <div class="form-group row">
+                <label for="firstName" class="col-md-2 control-label">Select Role</label>
+                <div class="col-md-10">
+                    <select class="custom-select" id="inputGroupSelect01" name="role">
+                        <option value="null" disabled>Choose...</option>
+                        <option value="patient">patient</option>
+                        <option value="Doctor">Doctor</option>
+                        <option value="Admin">Admin</option>
+                      </select>
+                </div>
+              </div>
+      
+          <div class="form-group row">
+            <label for="firstName" class="col-md-2 control-label">Your Name</label>
+            <div class="col-md-5">
+              <input type="text" id="firstName" name="first" placeholder="First" class="form-control" autofocus>
+            </div>
+            
+            <div class="col-md-5">
+                <input type="text" id="lastName" name="second" placeholder="last" class="form-control" autofocus>
+              </div>
+          </div>
+        
+          <div class="form-group row">
+            <label for="email" class="col-md-2 control-label">Email* </label>
+            <div class="col-md-10">
+              <input type="email" id="email" placeholder="Email"  name="email" class="form-control" name="email">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="password" class="col-md-2 control-label">Password*</label>
+            <div class="col-md-10">
+              <input type="password" id="password" name="password" placeholder="Password" class="form-control">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="password" class="col-md-2 control-label">Confirm Password*</label>
+            <div class="col-md-10">
+              <input type="password" placeholder="Password" name="confirmpassword" class="form-control">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="birthDate" class="col-md-2 control-label">Date of Birth*</label>
+            <div class="col-md-10">
+              <input type="date" id="birthDate" name="date" class="form-control">
+            </div>
+          </div>
+        
+          <div class="form-group row">
+              <label for="phone" class="col-md-2 control-label">Phone Number* </label>
+              <div class="col-md-10">
+                <input type="number" id="number" name="phone" placeholder="please enter your contact number" class="form-control">
+                <span class="help-block">Your phone number won't be disclosed anywhere </span> 
+              </div>
+            </div>
+          <div class="form-group row">
+            <label for="Height" class="col-md-2 control-label">Height* </label>
+            <div class="col-md-10">
+              <input type="number" id="height" name="height" placeholder="Please write your height in centimetres" class="form-control">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="weight" class="col-md-2 control-label">Weight* </label>
+            <div class="col-md-10">
+              <input type="number" id="weight" name="weight" placeholder="Please write your weight in kilograms" class="form-control">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="control-label col-md-2">Gender</label>
+            <div class="col-md-10">
+              <div class="row">
+                <div class="col-sm-4">
+                  <label class="radio-inline">
+                    <input type="radio" id="femaleRadio" name="Gender" value="Female">Female
+                  </label>
+                </div>
+                <div class="col-sm-4">
+                  <label class="radio-inline">
+                    <input type="radio" id="maleRadio" name="Gender" value="Male">Male
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div> <!-- /.form-group -->
+          <div class="form-group row">
+              <label for="address" class="col-md-2 control-label">Address* </label>
+              <div class="col-md-10">
+                  <textarea rows="3" name="Address" class="form-control" id="description" placeholder="please enter your address"></textarea>
+              </div>
+            </div>
+          <div class="form-group row">
+            <div class="col-sm-9 col-sm-offset-3">
+              <span class="help-block">*Required fields</span>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" (click)="fun()">Register</button>
+        </form> <!-- /form -->
+      </div> <!-- ./container -->
+</form>
